@@ -6,11 +6,6 @@
     font-family: 'Nunito', sans-serif;
 }
 
-footer {
-    position: sticky;
-    bottom: 0;
-}
-
 header{
     background-color: rgba(89, 113, 141, 0.686)
 }
