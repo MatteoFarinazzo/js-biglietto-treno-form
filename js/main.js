@@ -105,7 +105,7 @@ function userHasFinishDataCompletion(event) {
 
     if (age<18){discountedPrice = (rangeKilometers *0.21) + "Scontato" + '&nbsp' + ((rangeKilometers *0.21) / 100 * 80).toFixed(2);}
     else if (age>=65) {discountedPrice = (rangeKilometers *0.21) + "Scontato" + '&nbsp' + ((rangeKilometers *0.21) / 100 * 60).toFixed(2);}
-    else {discountedPrice = (rangeKilometers *0.21).toFixed; }
+    else {discountedPrice = rangeKilometers *0.21; }
 
     let ageTipe;
     if (age<18){ageTipe = "Minorenne";}
