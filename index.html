@@ -53,17 +53,73 @@
         <h2>Controlla il prezzo del tuo biglietto</h2>
       </div>
 
-     
 
-      <div class="mb-3">
-        <button type="button" class="btn btn-primary" onclick="user_data()">Inserisci i dati</button>
+
+
+    <div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" ><i class="fa fa-user"></i>
+        Inserisci i tuoi dati
+      </button>
+
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-brown">
+              <h1 class="modal-title fs-5 " id="staticBackdropLabel">Inserisci i tuoi Dati</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="container text-center mt-5">
+
+                <form id="form_data_input" data-bitwarden-watching="1" onsubmit="userHasFinishDataCompletion(event)">
+                  <div class="row mb-3">
+                    <label for="nameInput" class="col-sm-2 col-form-label">Nome</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="nameInput">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="surnameInput" class="col-sm-2 col-form-label">Cognome</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="surnameInput">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="distanceInKm" class="col-sm-12 col-form-label">Chilometri da percorrere</label>
+                    <div class="col-12">
+                      <input type="number" class="form-control" id="distanceInKm">
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                      <label for="ageInput" class="col-12 col-form-label">La tua età</label>
+                    <div class="col-12">
+                      <input type="number" class="form-control" id="ageInput">
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">HO FINITO</button>
+                </form>
+
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+
+
+
+
+
+
+
       </div>
-      <div class="mb-3">
-        <button type="button" class="btn btn-primary" onclick="base_price()">Calcola prezzo totale del biglietto</button>
-      </div>
-      <div class="mb-3">
-        <button type="button" class="btn btn-primary" onclick="discounte_price()">Calcola prezzo scontato</button>
-      </div> 
+
+
+
 
       <div>
         <p>Si applicano sconti ai minori di 18 anni e agli over 65 (65 compresi)</p>
@@ -113,7 +169,7 @@
   </div>
   
 
-  <footer>
+  <!--<footer>
     <div class="container-fluid ">
       <footer class=" row bg-dark text-secondary ">
         <div class="nav justify-content-center pb-2 mb-2 flex-column text-center pt-1">
@@ -122,7 +178,7 @@
         <p class="text-center text-body-secondary pb-1 fs-6">Copyright © Your Website 2023</p>
       </footer>
     </div>
-  </footer>
+  </footer>-->
 
   <script src="./js/main.js"></script>
 
