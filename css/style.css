@@ -7,11 +7,23 @@
 }
 
 header{
-    background-color: rgba(89, 113, 141, 0.686)
+    background-color: rgba(89, 113, 141, 0.686);
 }
 
 .biglietto{
     width: 80%;
     margin: 0 auto;
 
+}
+
+.head-ticket{
+    
+}
+
+.bg-ticket{
+    box-shadow: 10px 10px 10px rgba(89, 113, 141, 0.686);
+}
+
+.bg-ticket:hover{
+    scale: 105%;
 }
