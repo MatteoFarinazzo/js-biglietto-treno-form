@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Nunito', sans-serif;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+}
+
+header{
+    background-color: rgba(89, 113, 141, 0.686)
+}
+
+.biglietto{
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px rgba(89, 113, 141, 0.686);
+}
